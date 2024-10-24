@@ -1,0 +1,13 @@
+.badge {
+    display: inline-block;
+    background: #c39f66;
+    font-size: 14px;
+    line-height: 1;
+    color: #fff;
+    padding: 2px 6px;
+    border-radius: 4px;
+
+    &--sale {
+        background: #c06e65;
+    }
+}

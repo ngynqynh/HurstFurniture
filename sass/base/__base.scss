@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+}
+
+body {
+    position: relative;
+    overflow-x: hidden;
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    color: #676767;
+}
+
+.box-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+picture {
+    display: block;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.sec-clr {
+    color: #c06e65;
+}

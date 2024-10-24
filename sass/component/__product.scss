@@ -1,0 +1,53 @@
+.product {
+    display: block;
+    overflow: hidden;
+
+    &-info {
+        .box-flex {
+            @include flexBetween();
+        }
+
+        .box-col {
+            &:first-child {
+                text-align: left;
+            }
+
+            &:last-child {
+                text-align: right;
+            }
+        }
+    }
+
+    &-img {
+        position: relative;
+        max-width: 235px;
+        height: 100%;
+        margin-bottom: 24px;
+
+        img {
+            max-width: 100%;
+        }
+
+        .badge {
+            position: absolute;
+            top: 12px;
+            left: 12px;
+        }
+    }
+
+    &-name {
+        @include fontlhw(14px, 16px, 500);
+        margin-bottom: 4px;
+    }
+
+    &-category {
+        @include fontlhw(12px, 14px, 500);
+        margin-bottom: 4px;
+    }
+
+    &-rate {
+        .ic-star {
+            @include fontlh(9px, 1);
+        }
+    }
+}
