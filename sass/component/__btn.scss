@@ -1,6 +1,6 @@
 .btn {
     display: inline-block;
-    @include fontfull(14px, 1, #676767, 400);
+    @include fontfull(14px, 1, var(--text-clr), 400);
     border: 1px solid #ccc;
 
     &-small {

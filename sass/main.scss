@@ -1,10 +1,14 @@
 @import "./abstract/mixins/_mixin";
+@import "./abstract/mixins/_responsive";
 
 @import "./base/_base";
+@import "./base/_variables";
 
 @import "./layout/_layout";
+@import "./layout/_header";
+@import "./layout/_footer";
 
-@import "./page/_landing-page";
+@import "./page/_main-page";
 
 @import "./component/_badge";
 @import "./component/_swiper-custom";

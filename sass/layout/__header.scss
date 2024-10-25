@@ -1,0 +1,28 @@
+.page__header {
+    @include flexBetween();
+    padding: 9px 12px;
+
+    &-logo {
+        flex: 1;
+        text-align: center;
+    }
+
+    &-cart {
+        position: relative;
+        width: 24px;
+        height: 100%;
+
+        &::after {
+            content: "1";
+            position: absolute;
+            top: -.5rem;
+            right: -0.3rem;
+            border-radius: 50%;
+            height: 1rem;
+            width: 1rem;
+            @include flexCenter();
+            @include fontfull(12px, 1, #fff, 400);
+            background: var(--secondary-clr);
+        }
+    }
+}

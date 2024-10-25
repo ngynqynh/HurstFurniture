@@ -1,6 +1,6 @@
 .badge {
     display: inline-block;
-    background: #c39f66;
+    background: var(--primary-clr);
     font-size: 14px;
     line-height: 1;
     color: #fff;
@@ -8,6 +8,6 @@
     border-radius: 4px;
 
     &--sale {
-        background: #c06e65;
+        background: var(--secondary-clr);
     }
 }

@@ -17,114 +17,135 @@
             top: unset;
             border: 1px solid #c1c1c1;
             padding: 4px;
+        }
+        }
+
+    .swiper-button-next {
+        &::before {
+            content: "next";
+        }
+    }
+
+    .swiper-button-prev {
+        &::before {
+            content: "prev";
+        }
+    }
+    }
+
+.banner__swiper {
+    max-height: 427px;
+
+    .wrapper {
+        position: relative;
+        @include flexCenter();
+        width: 100%;
+        height: 100%;
+        // background: url(/images/banner-main.png) center no-repeat;
+        // min-height: 427px;
+        background: #f6f4f3;
+
+        .swiper-img img {
+            max-width: var(--pd-img, 360px);
+
+            @include responsive(xsm) {
+                --pd-img: 200px;
             }
+        }
+
+        &>* {
+            flex-basis: 50%;
+        }
+@include responsive(xsm) {
+    padding: 20px 0;
+    flex-direction: column;
+}
+    }
+
+    .swiper-content {
+        padding-right: 20px;
+
+        .subtitle {
+            @include fontlh(20px, 24px);
+@include responsive(xsm) {
+    @include fontlh(16px, 20px);
+}
+        }
+
+        .title {
+            @include fontlhw(46px, 1, 500);
+            letter-spacing: 1.5px;
+            padding: 4px 0;
+@include responsive(xsm) {
+    font-size: 26px;
+}
+        }
+
+        .desc {
+            @include fontlh(14px, 16px);
+            margin-bottom: var(--desc-margin, 30px);
+            max-width: 410px;
             }
+@include responsive(xsm) {
+    padding: 20px;
+    --desc-margin: 10px;
+}
+    }
 
-            .swiper-button-next {
-                &::before {
-                    content: "next";
-                }
+    .swiper-button-next,
+    .swiper-button-prev {
+
+        i {
+            position: absolute;
+            top: 50%;
+            @include fontlh(14px, 1);
+            color: #676767;
+            z-index: 1;
+        }
+
+        &::after {
+            display: none;
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            width: 0;
+            height: 0;
+            border-top: 30px solid transparent;
+            border-bottom: 30px solid transparent;
+        }
+        }
+
+    .swiper-button-next {
+        right: -4px;
+
+        &::before {
+            border-right: 30px solid #fff;
+        }
+        }
+
+    .swiper-button-prev {
+        left: -4px;
+
+        &::before {
+            border-left: 30px solid #fff;
+        }
+        }
+        }
+
+.swiper {
+    &-pagination {
+
+        &-bullets {
+            left: unset;
+            right: 3%;
+            text-align: right;
+        }
+
+        &-bullet-active {
+            background: var(--secondary-clr);
             }
-
-            .swiper-button-prev {
-                &::before {
-                    content: "prev";
-                }
-            }
-            }
-
-            .banner__swiper {
-                max-height: 427px;
-
-                .swiper-slide {
-                    position: relative;
-                    display: flex;
-                    align-items: center;
-                    justify-content: flex-end;
-                    width: 100%;
-                    height: 100%;
-                    background: url(/images/banner-main.png) center no-repeat;
-                    min-height: 427px;
-
-                    &>* {
-                        flex-basis: 50%;
-                    }
-                }
-
-                .swiper-content {
-                    padding-right: 20px;
-
-                    .subtitle {
-                        @include fontlh(20px, 24px);
-                    }
-
-                    .title {
-                        @include fontlhw(46px, 1, 500);
-                        letter-spacing: 1.5px;
-                        padding: 4px 0;
-                    }
-
-                    .desc {
-                        @include fontlh(14px, 16px);
-                        margin-bottom: 30px;
-                        max-width: 410px;
-                    }
-                }
-
-                .swiper-button-next,
-                .swiper-button-prev {
-
-                    i {
-                        position: absolute;
-                        top: 50%;
-                        @include fontlh(14px, 1);
-                        color: #676767;
-                        z-index: 1;
-                    }
-
-                    &::after {
-                        display: none;
-                    }
-
-                    &::before {
-                        content: "";
-                        position: absolute;
-                        top: 0;
-                        width: 0;
-                        height: 0;
-                        border-top: 30px solid transparent;
-                        border-bottom: 30px solid transparent;
-                    }
-                }
-
-                .swiper-button-next {
-                    right: -4px;
-
-                    &::before {
-                        border-right: 30px solid #fff;
-                    }
-                }
-
-                .swiper-button-prev {
-                    left: -4px;
-
-                    &::before {
-                        border-left: 30px solid #fff;
-                    }
-                }
-            }
-
-            .swiper {
-                &-pagination {
-
-                    &-bullets {
-                        left: unset;
-                        right: 3%;
-                        text-align: right;
-                    }
-
-                    &-bullet-active {
-                        background: #c06e65;
-                    }
     }
 }
