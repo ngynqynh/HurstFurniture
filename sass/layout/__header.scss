@@ -2,6 +2,10 @@
     @include flexBetween();
     padding: 9px 12px;
 
+    &-menu {
+        cursor: pointer;
+    }
+
     &-logo {
         flex: 1;
         text-align: center;
@@ -11,6 +15,7 @@
         position: relative;
         width: 24px;
         height: 100%;
+        cursor: pointer;
 
         &::after {
             content: "1";
