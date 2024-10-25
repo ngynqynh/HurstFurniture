@@ -20,9 +20,15 @@
 
     &-img {
         position: relative;
-        max-width: 235px;
         height: 100%;
         margin-bottom: 24px;
+        &.img--small {
+            max-width: 235px;
+        }
+
+        &.img--normal {
+            max-width: 100%;
+        }
 
         img {
             max-width: 100%;
@@ -36,18 +42,12 @@
     }
 
     &-name {
-        @include fontlhw(14px, 16px, 500);
+        @include fontlhw(12px, 14px, 500);
         margin-bottom: 4px;
     }
 
     &-category {
         @include fontlhw(12px, 14px, 500);
         margin-bottom: 4px;
-    }
-
-    &-rate {
-        .ic-star {
-            @include fontlh(9px, 1);
-        }
     }
 }

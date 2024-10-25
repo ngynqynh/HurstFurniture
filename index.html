@@ -13,16 +13,18 @@
 </head>
 
 <body>
-    <section class="landing">
-        <div class="landing__header">
-            <div class="landing__header-logo">
+    <section class="page">
+        <!-- header -->
+        <header class="page__header">
+            <div class="page__header-logo">
                 <img src="./images/logo-hurst.png" alt="">
             </div>
-            <div class="landing__header-cart">
+            <div class="page__header-cart">
                 <i class="fa-solid fa-cart-shopping"></i>
             </div>
-        </div>
-        <section class="landing__banner">
+        </header>
+        <!-- body -->
+        <section class="page__banner">
             <div class="box-container banner__wrapper">
                 <div class="banner__products">
                     <ul>
@@ -65,18 +67,51 @@
                     <div class="swiper banner__swiper">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
-                                <img src="./images/Picture4.png" alt="">
+                                <div class="swiper-img">
+                                    <!-- <img src="./images/Slice3.png" alt=""> -->
+                                </div>
+                                <div class="swiper-content">
+                                    <p class="subtitle">WELCOME TO OUR</p>
+                                    <p class="title">FURNITURE</p>
+                                    <p class="desc"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam nemo necessitatibus repudiandae
+                                        assumenda dolores, deleniti, nulla porro, vel excepturi amet ab eum. Fugiat, sapiente! </p>
+                                    <div class="shopping-btn">
+                                        <a href="#" class="btn btn-medium">SHOP NOW</a>
+                                    </div>
+                                </div>
                             </div>
                             <div class="swiper-slide">
-                                <img src="./images/Picture4.png" alt="">
+                                <div class="swiper-img">
+                                    <img src="./images/Slice3.png" alt="">
+                                </div>
+                                <div class="swiper-content">
+                                    <p class="subtitle">WELCOME TO OUR</p>
+                                    <p class="title">FURNITURE</p>
+                                    <p class="desc"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam nemo necessitatibus repudiandae
+                                        assumenda dolores, deleniti, nulla porro, vel excepturi amet ab eum. Fugiat, sapiente! </p>
+                                    <div class="shopping-btn">
+                                        <a href="#" class="btn btn-medium">SHOP NOW</a>
+                                    </div>
+                                </div>
                             </div>
                             <div class="swiper-slide">
-                                <img src="./images/Picture4.png" alt="">
+                                <div class="swiper-img">
+                                    <img src="./images/Slice3.png" alt="">
+                                </div>
+                                <div class="swiper-content">
+                                    <p class="subtitle">WELCOME TO OUR</p>
+                                    <h1 class="title">FURNITURE</h1>
+                                    <p class="desc"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam nemo necessitatibus repudiandae
+                                        assumenda dolores, deleniti, nulla porro, vel excepturi amet ab eum. Fugiat, sapiente! </p>
+                                    <div class="shopping-btn">
+                                        <a href="#" class="btn btn-medium">SHOP NOW</a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="swiper-pagination"></div>
-                        <div class="swiper-button-next"></div>
-                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"><i class="fa-solid fa-angle-right"></i></div>
+                        <div class="swiper-button-prev"><i class="fa-solid fa-angle-left"></i></div>
                     </div>
                 </div>
             </div>
@@ -89,14 +124,14 @@
                 </ul>
             </div>
         </section>
-        <section class="landing__features">
-            <h2 class="landing-title">Featured Products</h2>
+        <section class="page__features">
+            <h2 class="page-title">Featured Products</h2>
             <div class="features__list">
                 <div class="swiper features__swiper">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <div class="product">
-                                <div class="product-img">
+                                <div class="product-img img--small">
                                     <span class="badge">New</span>
                                     <img src="./images/demo.png" alt="">
                                 </div>
@@ -108,7 +143,7 @@
                                         </div>
                                         <div class="box-col">
                                             <div class="product-category">Furnitures</div>
-                                            <div class="product-rate">
+                                            <div class="rating">
                                                 <span class="ic-star ic-fill"><i class="fa-regular fa-star"></i></span>
                                                 <span class="ic-star ic-fill"><i class="fa-regular fa-star"></i></span>
                                                 <span class="ic-star ic-fill"><i class="fa-regular fa-star"></i></span>
@@ -122,7 +157,7 @@
                         </div>
                         <div class="swiper-slide">
                             <div class="product">
-                                <div class="product-img">
+                                <div class="product-img img--small">
                                     <span class="badge badge--sale">Sale</span>
                                     <img src="./images/demo.png" alt="">
                                 </div>
@@ -134,7 +169,82 @@
                                         </div>
                                         <div class="box-col">
                                             <div class="product-category">Furnitures</div>
-                                            <div class="product-rate">
+                                            <div class="rating">
+                                                <span class="ic-star ic-fill"><i class="fa-regular fa-star"></i></span>
+                                                <span class="ic-star ic-fill"><i class="fa-regular fa-star"></i></span>
+                                                <span class="ic-star ic-fill"><i class="fa-regular fa-star"></i></span>
+                                                <span class="ic-star"><i class="fa-regular fa-star"></i></span>
+                                                <span class="ic-star"><i class="fa-regular fa-star"></i></span>
+                                            </div>
+                                            </div>
+                                            </div>
+                                            </div>
+                                            </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="product">
+                                                    <div class="product-img img--small">
+                                                        <img src="./images/demo.png" alt="">
+                                                    </div>
+                                                    <div class="product-info">
+                                                        <div class="box-flex">
+                                                            <div class="box-col">
+                                                                <div class="product-name">DUMMY PRODUCT NAME</div>
+                                                                <div class="product-price sec-clr">$56.20</div>
+                                                            </div>
+                                                            <div class="box-col">
+                                                                <div class="product-category">Furnitures</div>
+                                                                <div class="rating">
+                                                                    <span class="ic-star ic-fill"><i class="fa-regular fa-star"></i></span>
+                                                                    <span class="ic-star ic-fill"><i class="fa-regular fa-star"></i></span>
+                                                                    <span class="ic-star ic-fill"><i class="fa-regular fa-star"></i></span>
+                                                                    <span class="ic-star"><i class="fa-regular fa-star"></i></span>
+                                                                    <span class="ic-star"><i class="fa-regular fa-star"></i></span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="product">
+                                                    <div class="product-img img--small">
+                                                        <img src="./images/demo.png" alt="">
+                                                    </div>
+                                                    <div class="product-info">
+                                                        <div class="box-flex">
+                                                            <div class="box-col">
+                                                                <div class="product-name">DUMMY PRODUCT NAME</div>
+                                                                <div class="product-price sec-clr">$56.20</div>
+                                                            </div>
+                                                            <div class="box-col">
+                                                                <div class="product-category">Furnitures</div>
+                                                                <div class="rating">
+                                                                    <span class="ic-star ic-fill"><i class="fa-regular fa-star"></i></span>
+                                                                    <span class="ic-star ic-fill"><i class="fa-regular fa-star"></i></span>
+                                                                    <span class="ic-star ic-fill"><i class="fa-regular fa-star"></i></span>
+                                                                    <span class="ic-star"><i class="fa-regular fa-star"></i></span>
+                                                                    <span class="ic-star"><i class="fa-regular fa-star"></i></span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="product">
+                                                    <div class="product-img img--small">
+                                                        <img src="./images/demo.png" alt="">
+                                                    </div>
+                                                    <div class="product-info">
+                                                        <div class="box-flex">
+                                                            <div class="box-col">
+                                                                <div class="product-name">DUMMY PRODUCT NAME</div>
+                                                                <div class="product-price sec-clr">$56.20</div>
+                                                            </div>
+                                                            <div class="box-col">
+                                                                <div class="product-category">Furnitures</div>
+                                                                <div class="rating">
                                                 <span class="ic-star ic-fill"><i class="fa-regular fa-star"></i></span>
                                                 <span class="ic-star ic-fill"><i class="fa-regular fa-star"></i></span>
                                                 <span class="ic-star ic-fill"><i class="fa-regular fa-star"></i></span>
@@ -148,7 +258,7 @@
                         </div>
                         <div class="swiper-slide">
                             <div class="product">
-                                <div class="product-img">
+                                <div class="product-img img--small">
                                     <img src="./images/demo.png" alt="">
                                 </div>
                                 <div class="product-info">
@@ -159,7 +269,7 @@
                                         </div>
                                         <div class="box-col">
                                             <div class="product-category">Furnitures</div>
-                                            <div class="product-rate">
+                                            <div class="rating">
                                                 <span class="ic-star ic-fill"><i class="fa-regular fa-star"></i></span>
                                                 <span class="ic-star ic-fill"><i class="fa-regular fa-star"></i></span>
                                                 <span class="ic-star ic-fill"><i class="fa-regular fa-star"></i></span>
@@ -169,12 +279,32 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="product">
-                                <div class="product-img">
-                                    <img src="./images/demo.png" alt="">
+                                </div>
+                                </div>
+                                </div>
+                                <div class="swiper-pagination"></div>
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-button-prev"></div>
+                                </div>
+                                </div>
+                                </section>
+                                <section class="page__purchase">
+                                    <h2 class="page-title">Purchase Online on Hurst</h2>
+                                    <div class="purchase__menu">
+                                        <ul>
+                                            <li class="active">New Arrivals</li>
+                                            <li>Best Seller</li>
+                                            <li>Most View</li>
+                                            <li>Discounts</li>
+                                        </ul>
+                                    </div>
+                                    <div class="purchase__products">
+                                        <ul class="box-flex">
+                                            <li>
+                                                <div class="product">
+                            <div class="product-img">
+                                <span class="badge">New</span>
+                                <img src="./images/demo.png" alt="">
                                 </div>
                                 <div class="product-info">
                                     <div class="box-flex">
@@ -184,22 +314,49 @@
                                         </div>
                                         <div class="box-col">
                                             <div class="product-category">Furnitures</div>
-                                            <div class="product-rate">
-                                                <span class="ic-star ic-fill"><i class="fa-regular fa-star"></i></span>
-                                                <span class="ic-star ic-fill"><i class="fa-regular fa-star"></i></span>
-                                                <span class="ic-star ic-fill"><i class="fa-regular fa-star"></i></span>
-                                                <span class="ic-star"><i class="fa-regular fa-star"></i></span>
-                                                <span class="ic-star"><i class="fa-regular fa-star"></i></span>
-                                            </div>
+                                        <div class="rating">
+                                            <span class="ic-star ic-fill"><i class="fa-regular fa-star"></i></span>
+                                            <span class="ic-star ic-fill"><i class="fa-regular fa-star"></i></span>
+                                            <span class="ic-star ic-fill"><i class="fa-regular fa-star"></i></span>
+                                            <span class="ic-star"><i class="fa-regular fa-star"></i></span>
+                                            <span class="ic-star"><i class="fa-regular fa-star"></i></span>
+                                        </div>
+                                        </div>
+                                        </div>
+                                        </div>
+                                        </div>
+                    </li>
+                    <li>
+                        <div class="product">
+                            <div class="product-img">
+                                <span class="badge">New</span>
+                                <img src="./images/demo.png" alt="">
+                            </div>
+                            <div class="product-info">
+                                <div class="box-flex">
+                                    <div class="box-col">
+                                        <div class="product-name">DUMMY PRODUCT NAME</div>
+                                        <div class="product-price sec-clr">$56.20</div>
+                                    </div>
+                                    <div class="box-col">
+                                        <div class="product-category">Furnitures</div>
+                                        <div class="rating">
+                                            <span class="ic-star ic-fill"><i class="fa-regular fa-star"></i></span>
+                                            <span class="ic-star ic-fill"><i class="fa-regular fa-star"></i></span>
+                                            <span class="ic-star ic-fill"><i class="fa-regular fa-star"></i></span>
+                                            <span class="ic-star"><i class="fa-regular fa-star"></i></span>
+                                            <span class="ic-star"><i class="fa-regular fa-star"></i></span>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="product">
-                                <div class="product-img">
-                                    <img src="./images/demo.png" alt="">
+                            </div>
+                            </li>
+                            <li>
+                                <div class="product">
+                                    <div class="product-img">
+                                <span class="badge">New</span>
+                                <img src="./images/demo.png" alt="">
                                 </div>
                                 <div class="product-info">
                                     <div class="box-flex">
@@ -209,22 +366,49 @@
                                         </div>
                                         <div class="box-col">
                                             <div class="product-category">Furnitures</div>
-                                            <div class="product-rate">
-                                                <span class="ic-star ic-fill"><i class="fa-regular fa-star"></i></span>
-                                                <span class="ic-star ic-fill"><i class="fa-regular fa-star"></i></span>
-                                                <span class="ic-star ic-fill"><i class="fa-regular fa-star"></i></span>
-                                                <span class="ic-star"><i class="fa-regular fa-star"></i></span>
-                                                <span class="ic-star"><i class="fa-regular fa-star"></i></span>
-                                            </div>
+                                        <div class="rating">
+                                            <span class="ic-star ic-fill"><i class="fa-regular fa-star"></i></span>
+                                            <span class="ic-star ic-fill"><i class="fa-regular fa-star"></i></span>
+                                            <span class="ic-star ic-fill"><i class="fa-regular fa-star"></i></span>
+                                            <span class="ic-star"><i class="fa-regular fa-star"></i></span>
+                                            <span class="ic-star"><i class="fa-regular fa-star"></i></span>
+                                        </div>
+                                        </div>
+                                        </div>
+                                        </div>
+                                        </div>
+                    </li>
+                    <li>
+                        <div class="product">
+                            <div class="product-img">
+                                <span class="badge">New</span>
+                                <img src="./images/demo.png" alt="">
+                            </div>
+                            <div class="product-info">
+                                <div class="box-flex">
+                                    <div class="box-col">
+                                        <div class="product-name">DUMMY PRODUCT NAME</div>
+                                        <div class="product-price sec-clr">$56.20</div>
+                                    </div>
+                                    <div class="box-col">
+                                        <div class="product-category">Furnitures</div>
+                                        <div class="rating">
+                                            <span class="ic-star ic-fill"><i class="fa-regular fa-star"></i></span>
+                                            <span class="ic-star ic-fill"><i class="fa-regular fa-star"></i></span>
+                                            <span class="ic-star ic-fill"><i class="fa-regular fa-star"></i></span>
+                                            <span class="ic-star"><i class="fa-regular fa-star"></i></span>
+                                            <span class="ic-star"><i class="fa-regular fa-star"></i></span>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="product">
-                                <div class="product-img">
-                                    <img src="./images/demo.png" alt="">
+                            </div>
+                            </li>
+                            <li>
+                                <div class="product">
+                                    <div class="product-img">
+                                <span class="badge">New</span>
+                                <img src="./images/demo.png" alt="">
                                 </div>
                                 <div class="product-info">
                                     <div class="box-flex">
@@ -234,25 +418,164 @@
                                         </div>
                                         <div class="box-col">
                                             <div class="product-category">Furnitures</div>
-                                            <div class="product-rate">
-                                                <span class="ic-star ic-fill"><i class="fa-regular fa-star"></i></span>
-                                                <span class="ic-star ic-fill"><i class="fa-regular fa-star"></i></span>
-                                                <span class="ic-star ic-fill"><i class="fa-regular fa-star"></i></span>
-                                                <span class="ic-star"><i class="fa-regular fa-star"></i></span>
-                                                <span class="ic-star"><i class="fa-regular fa-star"></i></span>
-                                            </div>
+                                        <div class="rating">
+                                            <span class="ic-star ic-fill"><i class="fa-regular fa-star"></i></span>
+                                            <span class="ic-star ic-fill"><i class="fa-regular fa-star"></i></span>
+                                            <span class="ic-star ic-fill"><i class="fa-regular fa-star"></i></span>
+                                            <span class="ic-star"><i class="fa-regular fa-star"></i></span>
+                                            <span class="ic-star"><i class="fa-regular fa-star"></i></span>
+                                        </div>
+                                        </div>
+                                        </div>
+                                        </div>
+                                        </div>
+                    </li>
+                    <li>
+                        <div class="product">
+                            <div class="product-img">
+                                <span class="badge">New</span>
+                                <img src="./images/demo.png" alt="">
+                            </div>
+                            <div class="product-info">
+                                <div class="box-flex">
+                                    <div class="box-col">
+                                        <div class="product-name">DUMMY PRODUCT NAME</div>
+                                        <div class="product-price sec-clr">$56.20</div>
+                                    </div>
+                                    <div class="box-col">
+                                        <div class="product-category">Furnitures</div>
+                                        <div class="rating">
+                                            <span class="ic-star ic-fill"><i class="fa-regular fa-star"></i></span>
+                                            <span class="ic-star ic-fill"><i class="fa-regular fa-star"></i></span>
+                                            <span class="ic-star ic-fill"><i class="fa-regular fa-star"></i></span>
+                                            <span class="ic-star"><i class="fa-regular fa-star"></i></span>
+                                            <span class="ic-star"><i class="fa-regular fa-star"></i></span>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+                            </div>
+                            </li>
+                            <li>
+                                <div class="product">
+                                    <div class="product-img">
+                                <span class="badge">New</span>
+                                <img src="./images/demo.png" alt="">
+                                </div>
+                                <div class="product-info">
+                                    <div class="box-flex">
+                                        <div class="box-col">
+                                            <div class="product-name">DUMMY PRODUCT NAME</div>
+                                            <div class="product-price sec-clr">$56.20</div>
+                                        </div>
+                                        <div class="box-col">
+                                            <div class="product-category">Furnitures</div>
+                                        <div class="rating">
+                                            <span class="ic-star ic-fill"><i class="fa-regular fa-star"></i></span>
+                                            <span class="ic-star ic-fill"><i class="fa-regular fa-star"></i></span>
+                                            <span class="ic-star ic-fill"><i class="fa-regular fa-star"></i></span>
+                                            <span class="ic-star"><i class="fa-regular fa-star"></i></span>
+                                            <span class="ic-star"><i class="fa-regular fa-star"></i></span>
+                                        </div>
+                                        </div>
+                                </div>
+                                </div>
+                                </div>
+                                </li>
+                                <li>
+                                    <div class="product">
+                                        <div class="product-img">
+                                            <span class="badge">New</span>
+                                            <img src="./images/demo.png" alt="">
+                                        </div>
+                                        <div class="product-info">
+                                            <div class="box-flex">
+                                                <div class="box-col">
+                                                    <div class="product-name">DUMMY PRODUCT NAME</div>
+                                                    <div class="product-price sec-clr">$56.20</div>
+                                    </div>
+                                    <div class="box-col">
+                                        <div class="product-category">Furnitures</div>
+                                        <div class="rating">
+                                            <span class="ic-star ic-fill"><i class="fa-regular fa-star"></i></span>
+                                            <span class="ic-star ic-fill"><i class="fa-regular fa-star"></i></span>
+                                            <span class="ic-star ic-fill"><i class="fa-regular fa-star"></i></span>
+                                            <span class="ic-star"><i class="fa-regular fa-star"></i></span>
+                                            <span class="ic-star"><i class="fa-regular fa-star"></i></span>
+                                        </div>
+                                        </div>
+                                        </div>
+                                        </div>
                         </div>
-                    </div>
-                    <div class="swiper-pagination"></div>
-                    <div class="swiper-button-next">next</div>
-                    <div class="swiper-button-prev">prev</div>
-                </div>
+                    </li>
+                    </ul>
             </div>
         </section>
+        <!-- footer -->
+        <footer class="page__footer">
+            <div class="footer-container">
+                <div class="box-flex">
+                    <div class="footer__item footer__contact">
+                        <div class="page-title">CONTACT US</div>
+                        <ul>
+                            <li>
+                                <span>Address:</span>
+                                <span>28 Green Tower, Street Name, New York City, USA</span>
+                            </li>
+                            <li>
+                                <span>Cell-Phone:</span>
+                                <span>012345-123456789</span>
+                            </li>
+                            <li>
+                                <span>Email:</span>
+                                <span>your-email@gmail.com</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__item footer__accounts">
+                        <div class="page-title">ACCOUNTS</div>
+                        <ul>
+                            <li>
+                                <a href="#">My Account</a>
+                            </li>
+                            <li>
+                                <a href="#">My Wishlist</a>
+                            </li>
+                            <li>
+                                <a href="#">My Cart</a>
+                            </li>
+                            <li>
+                                <a href="#">Sign In</a>
+                            </li>
+                            <li>
+                                <a href="#">Check Out</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__item footer__accounts">
+                        <div class="page-title">SHIPPING</div>
+                        <ul>
+                            <li><a href="#">New Products</a></li>
+                            <li><a href="#">Top Sellers</a></li>
+                            <li><a href="#">Manufactirers</a></li>
+                            <li><a href="#">Suppliers</a></li>
+                            <li><a href="#">Specials</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__item footer__choices">
+                        <div class="page-title">YOUR CHOICE PRODUCTS</div>
+                        <div class="footer__choices-products">
+                            <a href="#">
+                                <img src="./images/product2.png" alt="">
+                            </a>
+                            <a href="#">
+                                <img src="./images/product2.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </section>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>

@@ -2,6 +2,7 @@
     $(document).ready(function () {
         var bannerSwiper = new Swiper(".banner__swiper", {
             loop: true,
+            autoplay: true,
             pagination: {
                 el: ".banner__swiper .swiper-pagination",
                 clickable: true
