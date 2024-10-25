@@ -1,6 +1,7 @@
 .product {
     display: block;
     overflow: hidden;
+    cursor: pointer;
 
     &-info {
         .box-flex {
