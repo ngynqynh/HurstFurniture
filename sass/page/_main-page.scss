@@ -29,7 +29,9 @@
         margin-bottom: 40px;
 
         .banner__wrapper {
-            @include flexCenter();
+            display: flex;
+            align-items: stretch;
+            justify-content: center;
             padding: 0 40px 0 20px;
         }
 

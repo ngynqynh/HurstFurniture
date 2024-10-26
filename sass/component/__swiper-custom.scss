@@ -34,7 +34,8 @@
     }
 
 .banner__swiper {
-    max-height: 427px;
+    height: -webkit-fill-available;
+    max-height: 100%;
 
     .wrapper {
         position: relative;

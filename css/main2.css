@@ -214,7 +214,7 @@ a {
     margin-bottom: 40px; }
     .page__banner .banner__wrapper {
       display: flex;
-      align-items: center;
+      align-items: stretch;
       justify-content: center;
       padding: 0 40px 0 20px; }
     .page__banner .banner__products {
@@ -367,7 +367,8 @@ a {
     content: "prev"; }
 
 .banner__swiper {
-  max-height: 427px; }
+  height: -webkit-fill-available;
+  max-height: 100%; }
   .banner__swiper .wrapper {
     position: relative;
     display: flex;
